@@ -4,7 +4,6 @@ import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { ChangeEvent, FormEvent, useState } from "react";
 import { Button } from "@/components/atom/Button/Button";
 import { Input } from "@/components/atom/Input/Input";
-import { sendContactMessage } from "@/services/EmailService";
 import { Textarea } from "@/components/atom/Textarea/Textarea";
 
 export default function ContactUsSection() {
@@ -17,19 +16,6 @@ export default function ContactUsSection() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    const { ok, data } = await sendContactMessage(form);
-    if (ok) {
-      alert(data.message);
-      setForm({ name: "", email: "", message: "" });
-      setStatus("success");
-      setTimeout(() => setStatus("idle"), 2000);
-    } else {
-      alert(data.error);
-      setStatus("error");
-    }
-  };
 
   return (
     <section className="w-full py-20 px-4 bg-gradient-to-br from-sky-50 via-white to-lime-50 relative">
@@ -60,7 +46,6 @@ export default function ContactUsSection() {
         </motion.div>
 
         <motion.form
-          onSubmit={handleSubmit}
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
