@@ -1,10 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="w-full bg-black text-gray-400 text-center py-4 mt-auto">
-      <p className="text-sm">
-        Designed & developed by{" "}
-        <span className="text-[#A3E635] font-semibold">Aryan Salemabadi</span>
-      </p>
+    <footer className="bg-gray-800 text-white py-6 text-center">
+      <p>© 2025 Pulse</p>
     </footer>
   );
 };
