@@ -1,10 +1,8 @@
-import NavItem from "@/components/molecule/NavItem/NavItem";
-
+import NavItem from '@/components/molecule/NavItem/NavItem';
 
 const Header = () => {
   return (
     <header className="flex justify-between items-center px-6 py-4 bg-white shadow">
-      <h1 className="text-2xl font-bold text-blue-600">Pulse</h1>
       <nav>
         <ul className="flex space-x-6">
           <NavItem text="خانه" />
@@ -13,8 +11,9 @@ const Header = () => {
           <NavItem text="نقشه راه" />
         </ul>
       </nav>
+      <h1 className="text-2xl font-bold text-blue-600">Pulse</h1>
     </header>
   );
-}
+};
 
 export default Header;
