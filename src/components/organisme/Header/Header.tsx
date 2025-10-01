@@ -11,7 +11,7 @@ const Header = () => {
           <NavItem text="نقشه راه" />
         </ul>
       </nav>
-      <h1 className="text-2xl font-bold text-blue-600">Pulse</h1>
+      <h1 className="text-2xl font-bold text-blue-600">Nabz</h1>
     </header>
   );
 };
