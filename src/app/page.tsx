@@ -1,9 +1,9 @@
-import LandingPage from "@/components/template/LandingPage/LandingPage";
+import LandingPage from '@/components/template/LandingPage/LandingPage';
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <main className="min-h-screen text-white font-sans">
       <LandingPage />
-    </div>
+    </main>
   );
 }
