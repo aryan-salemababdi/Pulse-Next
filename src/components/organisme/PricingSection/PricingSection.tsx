@@ -13,7 +13,7 @@ const PricingSection = () => (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
       {/* Small Business Plan */}
       <PricingCard
-        plan="Small Business"
+        plan="Normal"
         price="99"
         description="For local businesses to monitor brand mentions and reviews."
         icon={Rocket}
@@ -28,7 +28,7 @@ const PricingSection = () => (
       />
       {/* Professional Plan */}
       <PricingCard
-        plan="Professional"
+        plan="Pro"
         price="499"
         description="For growing companies and marketing agencies."
         icon={Briefcase}
