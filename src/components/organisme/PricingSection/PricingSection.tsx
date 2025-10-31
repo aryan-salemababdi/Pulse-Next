@@ -45,7 +45,7 @@ const PricingSection = () => (
       {/* Enterprise Plan */}
       <PricingCard
         plan="Enterprise"
-        price="2000"
+        price="1200"
         description="For MPs, government, and crisis management."
         icon={Building}
         bgColor="bg-blue-600"
