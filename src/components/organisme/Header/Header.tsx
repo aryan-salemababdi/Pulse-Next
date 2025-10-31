@@ -58,7 +58,7 @@ const Header = () => {
               Get Started
             </Button>
             <button
-              className="md:hidden text-gray-300 hover:text-white transition-colors mr-5"
+              className="md:hidden text-gray-300 hover:text-white transition-colors mr-5 cursor-pointer"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
